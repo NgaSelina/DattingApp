@@ -85,13 +85,10 @@ function Login() {
             LOG IN
           </Button>
 
-          <Link component={TouchableOpacity} to="/register">
-            <Button
-              testID="login-signup"
-              style={styles.btn}
-              mode="contained">
-              SIGN UP
-            </Button>
+          <Link style={styles.note} component={TouchableOpacity} to="/register">
+            <Caption testID="login-signup" style={styles.textnote}>
+              Don't have an account? Sign up
+            </Caption>
           </Link>
         
       </View>

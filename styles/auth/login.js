@@ -45,6 +45,11 @@ const styles = StyleSheet.create ({
     color: '#FF6666',
     fontWeight: 'bold'
   },
+  textnote: {
+    fontSize: 18,
+    color: '#FF6666',
+    marginTop: 20,
+  },
   floatRight: {
     alignItems: 'flex-end',
     marginRight: 40,
@@ -56,6 +61,9 @@ const styles = StyleSheet.create ({
   error: {
     color: 'red',
     textAlign: 'center',
+  },
+  note: {
+    alignItems: 'center',
   },
 });
 export default styles;
