@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "31826201208",
-    "firebase_url": "https://lover-1b4a9.firebaseio.com",
-    "project_id": "lover-1b4a9",
-    "storage_bucket": "lover-1b4a9.appspot.com"
+    "project_number": "410807764562",
+    "project_id": "datingapp-cb9b2",
+    "storage_bucket": "datingapp-cb9b2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:31826201208:android:ad2e489e5dab88678e7b8d",
+        "mobilesdk_app_id": "1:410807764562:android:59d2f6575877376b9a818b",
         "android_client_info": {
           "package_name": "com.datingapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "31826201208-o6qqu5ji6icquv23450cq9rimiipkc46.apps.googleusercontent.com",
+          "client_id": "410807764562-gp9mo8fvoi2usfajdptb7d5cifumq0fh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD2O1pLNpEk_j66kvGmqRT2RV9L3H7n3tA"
+          "current_key": "AIzaSyDbXVk_rcGq0qh72mcBKZ5HFEaupOUP118"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "31826201208-o6qqu5ji6icquv23450cq9rimiipkc46.apps.googleusercontent.com",
+              "client_id": "410807764562-gp9mo8fvoi2usfajdptb7d5cifumq0fh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
