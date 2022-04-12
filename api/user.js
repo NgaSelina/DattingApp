@@ -2,7 +2,7 @@ import firestore from '@react-native-firebase/firestore';
 import * as lookup from 'country-code-lookup';
 import locationHelper from '../helpers/location';
 
-const API_WEATHER_KEY = 'b858d37e1324d289241c87a0f3fa70d3';
+const API_WEATHER_KEY = '0f120cc591744c666d17f0d914a79ba2';
 
 // Get entire document by user id from users collection
 export function getInfoByUserId(uid) {

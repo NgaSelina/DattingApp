@@ -75,7 +75,7 @@ export default function TopBar({currentUser}) {
         <Link key={i} to={link} component={TouchableOpacity}>
           <FontAwesomeIcon
             icon={icon}
-            size={26}
+            size={30}
             style={
               newLikes ? {...styles.topBarIcon, ...style} : styles.topBarIcon
             }

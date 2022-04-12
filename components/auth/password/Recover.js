@@ -33,7 +33,7 @@ function Recover() {
       <LightHeader title="Password recover" />
 
       <View style={{...styles.container, ...styles.flexContainer}}>
-        <Caption testID="recover-caption">
+        <Caption testID="recover-caption" style={styles.text}>
           You will get email with confirmation link.
         </Caption>
         <TextInput
@@ -51,13 +51,14 @@ function Recover() {
         )}
         {success.length > 0 && <Text style={styles.success}>{success}</Text>}
 
-        <Button
-          testID="recover-submit"
-          style={styles.btn}
-          mode="contained"
-          onPress={() => resetPassword()}>
-          Send confirmation link
-        </Button>
+            <Button
+              testID="recover-submit"
+              style={styles.btn}
+              mode="contained"
+              onPress={() => resetPassword()}>
+              Send link
+            </Button>
+        
       </View>
     </View>
   );

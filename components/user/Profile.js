@@ -62,7 +62,7 @@ function Profile({match}) {
   function uploadImage(key) {
     ImagePicker.openPicker({
       width: 1080,
-      height: 1920,
+      height: 1080,
       cropping: true,
     })
       .then(async (image) => {

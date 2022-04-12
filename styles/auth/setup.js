@@ -9,6 +9,11 @@ export default {
   },
   w100: {
     width: '100%',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    backgroundColor: '#DDDDDD'
   },
   cropView: {
     position: 'absolute',
@@ -37,9 +42,14 @@ export default {
     color: '#fff',
   },
   numericInput: {
-    width: 45,
+    //width: 45,
+    padding: 1,
     marginLeft: 'auto',
-    borderRadius: 5,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    backgroundColor: '#DDDDDD'
   },
   error: {
     color: 'red',
@@ -59,10 +69,11 @@ export default {
     justifyContent: 'space-between',
   },
   container: {
-    padding: 15,
+    padding: 20,
   },
   fixedBtn: {
-    marginHorizontal: 'auto',
+    width: 200,
+    backgroundColor: '#FF6666'
   },
   fixes: {
     justifyContent: 'flex-start',
@@ -70,15 +81,21 @@ export default {
   row: {
     marginBottom: 20,
     flexDirection: 'row',
-    flexWrap: 'wrap',
+    //flexWrap: 'wrap',
     alignItems: 'center',
   },
+  buttonSave: {
+    alignItems: 'center'
+  },
   rowTitle: {
-    fontWeight: '700',
-    color: '#000',
+    fontWeight: 'bold',
+    color: 'black',
+    fontSize: 16,
   },
   mr: {
     marginLeft: 'auto',
+    padding: 5,
+    backgroundColor: '#DDDDDD'
   },
   chips: {
     marginBottom: 10,

@@ -180,6 +180,7 @@ function Main() {
 
   return (
     <View style={styles.container}>
+
       <TopBar />
 
       {!profile && (
@@ -199,18 +200,23 @@ function Main() {
       {profile && (
         <>
           <View style={styles.mainImageBlock}>
-            <Image source={{uri: profile.picture}} style={styles.mainImage} />
+
+              <Image source={{uri: profile.picture}} style={styles.mainImage} />
 
             <View style={styles.userinfo}>
+
               <Link component={TouchableOpacity} to={`/profile/${profile.uid}`}>
                 <Headline style={styles.username}>
                   {profile.name}, {profile.age}
                 </Headline>
               </Link>
+
               <Text style={styles.location}>
                 {profile.city}, {profile.country}
               </Text>
+
             </View>
+            
           </View>
 
           <View style={styles.bottomBar}>

@@ -1,22 +1,7 @@
 import React, {useState, useContext, useEffect} from 'react';
-import {
-  View,
-  ScrollView,
-  StyleSheet,
-  Image,
-  Alert,
-  TouchableOpacity,
-} from 'react-native';
+import {View, ScrollView, StyleSheet, Image, Alert, TouchableOpacity,} from 'react-native';
 import {useHistory} from 'react-router-native';
-import {
-  Paragraph,
-  Text,
-  Chip,
-  Button,
-  Portal,
-  Dialog,
-  TextInput,
-} from 'react-native-paper';
+import {Paragraph, Text, Chip, Button, Portal, Dialog, TextInput,} from 'react-native-paper';
 import {Picker} from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import GetLocation from 'react-native-get-location';
@@ -193,7 +178,7 @@ function Setup() {
   function cropImg() {
     ImagePicker.openPicker({
       width: 1080,
-      height: 1920,
+      height: 1080,
       cropping: true,
     })
       .then(async (image) => {
@@ -424,12 +409,15 @@ function Setup() {
           <Text style={styles.error}>{error.join('\n')}</Text>
         )}
 
-        <Button
-          style={styles.fixedBtn}
-          mode="contained"
-          onPress={() => saveProfileInfo()}>
-          Save profile
-        </Button>
+          <View style={styles.buttonSave}>
+            <Button
+              style={styles.fixedBtn}
+              mode="contained"
+              onPress={() => saveProfileInfo()}>
+              Save profile
+            </Button>
+          </View>
+        
       </View>
     </ScrollView>
   );
