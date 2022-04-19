@@ -30,12 +30,23 @@ export default {
     flexWrap: 'wrap',
   },
   imageBlock: {
-    width: '33.3%',
+    width: '45%',
     padding: 10,
   },
   image: {
     width: '100%',
     aspectRatio: 1,
     borderRadius: 300,
+  },
+  distance: {
+    position: 'absolute',
+    bottom: 0,
+    //right: 0,
+    backgroundColor: '#FF6666',
+    paddingHorizontal: 5,
+    borderRadius: 100,
+    alignContent: 'center',
+    alignSelf: 'center',
+    textAlign: 'center',
   },
 };

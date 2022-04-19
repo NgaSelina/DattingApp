@@ -56,6 +56,9 @@ function Liked() {
               <View style={styles.imageBlock} key={i}>
                 <Link to={`/profile/${e.uid}`} component={TouchableOpacity}>
                   <Image source={{uri: e.picture}} style={styles.image} />
+                  <Text style={styles.distance}>
+                      {e.name.substr(0, 20)}
+                    </Text>
                 </Link>
               </View>
             ))}

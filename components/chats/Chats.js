@@ -21,21 +21,23 @@ const Item = ({name, picture, uid}) => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#FFFFFF'
   },
   item: {
-    backgroundColor: '#fff',
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
+    backgroundColor: '#FFCCCC',
+    padding: 15,
+    marginVertical: 10,
+    marginHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',
+    borderRadius: 20
   },
   title: {
     marginLeft: 15,
-    fontSize: 15,
+    fontSize: 16,
   },
   iconUsers: {
-    color: '#ddd',
+    color: 'black',
   },
 });
 
@@ -80,12 +82,12 @@ export default function Chats() {
   );
 
   return (
-    <View>
+    <View style={styles.container}>
       <LightHeader title="Chats" />
 
       <Link component={TouchableOpacity} to={'/groups/grouplist'}>
         <View style={styles.item}>
-          <FontAwesomeIcon icon={faUsers} size={32} style={styles.iconUsers} />
+          <FontAwesomeIcon icon={faUsers} size={35} style={styles.iconUsers} />
           <Text style={styles.title}>Groups</Text>
         </View>
       </Link>

@@ -29,8 +29,9 @@ export default {
   },
   mainImg: {
     width: '100%',
-    aspectRatio: 9 / 16,
+    aspectRatio: 3 / 4,
     resizeMode: 'cover',
+    borderRadius: 30,
   },
   location: {
     fontSize: 13,
@@ -44,6 +45,7 @@ export default {
     backgroundColor: 'rgba(0, 0, 0, .65)',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    borderRadius: 30
   },
   userinfoIcons: {
     color: '#fff',
@@ -73,4 +75,6 @@ export default {
     width: '100%',
     aspectRatio: 1,
   },
+  viewProfile: {
+  }
 };

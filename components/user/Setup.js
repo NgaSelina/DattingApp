@@ -61,7 +61,7 @@ function Setup() {
     interestedIn: 1,
     location: {longitute: 0, latitude: 0, geohash: ''},
   });
-
+9
   useEffect(() => {
     let isMounted = true;
 
@@ -135,7 +135,8 @@ function Setup() {
         const path = `user_images/${user.uid}.${previewImage.ext}`;
         const ref = storage().ref(path);
         await ref.putFile(previewImage.img);
-        userImg = await storage().ref(path).getDownloadURL();
+
+        userImg = await ref.getDownloadURL();
       } catch (err) {
         console.error(err);
       }
@@ -182,6 +183,7 @@ function Setup() {
       cropping: true,
     })
       .then(async (image) => {
+        console.log(' image.path',  image.path.split('.').pop());
         setPreviewImage({img: image.path, ext: image.path.split('.').pop()});
         setIsPreviewing(true);
       })
@@ -413,7 +415,7 @@ function Setup() {
             <Button
               style={styles.fixedBtn}
               mode="contained"
-              onPress={() => saveProfileInfo()}>
+              onPress={async() => await saveProfileInfo()}>
               Save profile
             </Button>
           </View>

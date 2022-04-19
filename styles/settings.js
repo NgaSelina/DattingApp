@@ -21,9 +21,11 @@ export default {
   },
   groupText: {
     padding: 15,
+    color: 'black',
+    fontWeight: 'bold',
   },
   icon: {
-    color: '#262626',
+    color: '#FF6666',
     padding: 15,
   },
 };

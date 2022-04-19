@@ -99,7 +99,7 @@ function Profile({match}) {
       <ScrollView>
         <LightHeader title="Profile" />
 
-        <View>
+        <View style={styles.viewProfile}>
           <Image source={{uri: profile.picture}} style={styles.mainImg} />
           <View style={styles.userinfo}>
             <View>

@@ -55,7 +55,7 @@ function Saved() {
                   <>
                     <Image source={{uri: usr.picture}} style={styles.image} />
                     <Text style={styles.distance}>
-                      {usr.name.substr(0, 10)}
+                      {usr.name.substr(0, 20)}
                     </Text>
                   </>
                 </Link>
@@ -96,12 +96,10 @@ const styles = StyleSheet.create({
   distance: {
     position: 'absolute',
     bottom: 0,
-    right: 10,
-    backgroundColor: '#fff',
+    //right: 0,
+    backgroundColor: '#FF6666',
     paddingHorizontal: 5,
     borderRadius: 100,
-    borderWidth: 1,
-    borderColor: '#ddd',
     alignContent: 'center',
     alignSelf: 'center',
     textAlign: 'center',
@@ -113,7 +111,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   imageBlock: {
-    width: '33.3%',
+    width: '45%',
     padding: 10,
   },
   image: {

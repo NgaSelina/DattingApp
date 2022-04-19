@@ -10,16 +10,15 @@ function LightHeader({title, redirect}) {
       <Appbar.BackAction
         onPress={() => (redirect ? history.push(redirect) : history.goBack())}
       />
-      <Appbar.Content title={title} />
+      <Appbar.Content title={title}  />
     </Appbar.Header>
   );
 }
 
 const styles = StyleSheet.create({
   transparentHeader: {
-    backgroundColor: '#fff',
-    borderColor: 'transparent',
-    borderBottomWidth: 0,
+    backgroundColor: '#FF6666',
+    //borderColor: 'transparent',
     elevation: 0,
     shadowOpacity: 0,
   },
