@@ -34,7 +34,7 @@ function App() {
     const sub = auth().onAuthStateChanged((usr) => {
       if (isMounted) {
         setUser(usr);
-
+        console.log('usr',usr);
         if (usr) {
           getUserById(usr.uid)
             .then((doc) => setComplete(doc.complete))

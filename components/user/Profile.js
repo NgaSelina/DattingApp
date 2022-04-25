@@ -99,17 +99,15 @@ function Profile({match}) {
       <ScrollView>
         <LightHeader title="Profile" />
 
-        <View style={styles.viewProfile}>
+        <View style={styles.page}>
+
           <Image source={{uri: profile.picture}} style={styles.mainImg} />
+
           <View style={styles.userinfo}>
-            <View>
               <Text style={styles.username}>
-                {profile.name}, {profile.age}
+                {profile.name}  ,  {profile.age}
               </Text>
-              <Text style={styles.location}>
-                {profile.city}, {profile.country}
-              </Text>
-            </View>
+
             <View style={styles.userinfoIconsBlock}>
               {match.params.uid === user.uid && (
                 <Link component={TouchableOpacity} to="/setup">
@@ -136,7 +134,7 @@ function Profile({match}) {
         <View style={styles.page}>
           {profile.status.length > 0 && (
             <View style={styles.mb}>
-              <Text>
+              <Text style={styles.text}>
                 {profile.status.length <= MAX_LENGTH && profile.status}
                 {profile.status.length > MAX_LENGTH &&
                   !showStatus &&
@@ -151,12 +149,27 @@ function Profile({match}) {
                   {`Show ${!showStatus ? 'more' : 'less'}`}
                 </Caption>
               )}
+          
+            <View style={styles.viewText}>
+              <Text style={styles.text}>Address:    {profile.address}</Text>
             </View>
+
+            <View style={styles.viewText}>
+              <Text style={styles.text}>Height:       {profile.height}</Text>
+            </View>
+
+            <View style={styles.viewText}>
+              <Text style={styles.text}>Job:            {profile.job}</Text>
+            </View>
+
+
+            </View>
+
           )}
 
           {profile.tags.length > 0 && (
             <View style={styles.mb}>
-              <Text style={styles.sectionTitle}>Interests:</Text>
+              <Text style={styles.text}>Interests:</Text>
               <View style={styles.row}>
                 {profile.tags.map((e, i) => (
                   <Chip style={styles.mr} key={i} mode="outlined">
@@ -170,7 +183,8 @@ function Profile({match}) {
           {(Object.keys(previewImgs).length !== 0 ||
             user.uid === profile.uid) && (
             <View>
-              <Text style={styles.sectionTitle}>Photos:</Text>
+              <Text style={styles.text}>Photos:</Text>
+
               <View style={styles.igImages}>
                 {[...Array(4).keys()].map((_, i) => (
                   <View style={styles.igImageWrapper} key={i}>

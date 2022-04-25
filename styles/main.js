@@ -90,5 +90,6 @@ export default {
   },
   notFoundButton: {
     marginTop: 15,
+    //backgroundColor: '#FF6666'
   },
 };

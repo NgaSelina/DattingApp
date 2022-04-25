@@ -28,6 +28,7 @@ const gravatarPicOptions = {
 };
 
 function Setup() {
+
   const history = useHistory();
   const {user, setComplete, complete} = useContext(AppContext);
 
@@ -60,6 +61,9 @@ function Setup() {
     gender: 0,
     interestedIn: 1,
     location: {longitute: 0, latitude: 0, geohash: ''},
+    job: '',
+    address: '',
+    height: '',
   });
 9
   useEffect(() => {
@@ -325,6 +329,39 @@ function Setup() {
           <TextInput
             style={styles.w100}
             mode="flat"
+            label="Address"
+            value={userinfo.address}
+            underlineColor="transparent"
+            onChangeText={(address) => setUserinfo((p) => ({...p, address}))}
+          />
+        </View>
+
+        <View style={styles.row}>
+          <TextInput
+            style={styles.w100}
+            mode="flat"
+            label="Job"
+            value={userinfo.job}
+            underlineColor="transparent"
+            onChangeText={(job) => setUserinfo((p) => ({...p, job}))}
+          />
+        </View>
+
+        <View style={styles.row}>
+          <TextInput
+            style={styles.w100}
+            mode="flat"
+            label="Height"
+            value={userinfo.height}
+            underlineColor="transparent"
+            onChangeText={(height) => setUserinfo((p) => ({...p, height}))}
+          />
+        </View>
+
+        <View style={styles.row}>
+          <TextInput
+            style={styles.w100}
+            mode="flat"
             label="Status"
             multiline={true}
             value={userinfo.status}
@@ -332,6 +369,7 @@ function Setup() {
             onChangeText={(status) => setUserinfo((p) => ({...p, status}))}
           />
         </View>
+
 
         <View style={styles.row}>
           <Paragraph style={styles.rowTitle}>Birthday</Paragraph>

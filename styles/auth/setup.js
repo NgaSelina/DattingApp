@@ -81,7 +81,7 @@ export default {
   row: {
     marginBottom: 20,
     flexDirection: 'row',
-    //flexWrap: 'wrap',
+    flexWrap: 'wrap',
     alignItems: 'center',
   },
   buttonSave: {

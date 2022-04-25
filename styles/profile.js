@@ -6,12 +6,14 @@ export default {
   row: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-  },
-  mb: {
+    marginTop: 10,
     marginBottom: 10,
   },
+  mb: {
+    marginBottom: 20,
+  },
   uploadIcon: {
-    color: '#ddd',
+    color: 'grey',
     paddingVertical: 35,
   },
   mr: {
@@ -24,8 +26,12 @@ export default {
     color: '#777',
   },
   page: {
-    paddingHorizontal: 15,
+    paddingHorizontal: 20,
     paddingVertical: 10,
+  },
+  text: {
+    fontSize: 16,
+    color: 'black',
   },
   mainImg: {
     width: '100%',
@@ -33,9 +39,9 @@ export default {
     resizeMode: 'cover',
     borderRadius: 30,
   },
-  location: {
+  address: {
     fontSize: 13,
-    color: '#fff',
+    color: 'black',
   },
   userinfo: {
     position: 'absolute',
@@ -45,10 +51,15 @@ export default {
     backgroundColor: 'rgba(0, 0, 0, .65)',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderRadius: 30
+    borderRadius: 30,
+    marginLeft: 20,
+    marginBottom: 10,
   },
   userinfoIcons: {
     color: '#fff',
+  },
+  iconAddress: {
+    color: 'black'
   },
   userinfoIconsBlock: {
     flexDirection: 'row',
@@ -60,21 +71,25 @@ export default {
     color: '#fff',
   },
   igImageWrapper: {
-    width: '25%',
-    borderWidth: 1,
-    borderColor: '#f4f4f4',
+    width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 1,
+    marginBottom: 10,
+    
   },
   igImages: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    //flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 10,
   },
   igImage: {
     width: '100%',
     aspectRatio: 1,
+    borderRadius: 20,
   },
-  viewProfile: {
-  }
+  viewText: {
+    marginTop: 20,
+  },
 };

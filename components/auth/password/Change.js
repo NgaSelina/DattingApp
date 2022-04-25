@@ -60,7 +60,7 @@ function Change() {
       <LightHeader title="Change password" />
 
       <View style={{...styles.page, ...styles.container}}>
-        <Caption>You will get email with confirmation link.</Caption>
+        <Caption style={styles.textNote}>You will get email with confirmation link.</Caption>
         {inputs.map(({label, key}, i) => (
           <TextInput
             key={i}

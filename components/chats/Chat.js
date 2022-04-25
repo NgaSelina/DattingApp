@@ -89,6 +89,7 @@ export default function Chat({match}) {
   }
 
   return (
+    
     <View style={{flex: 1}}>
       <LightHeader title={`${part.name}`} />
       <GiftedChat

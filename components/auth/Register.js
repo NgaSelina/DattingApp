@@ -81,13 +81,9 @@ function Register() {
   return (
     <ScrollView contentContainerStyle={{...styles.container}}>
 
-      <View style={styles.header}>
-
-      </View>
+      <View style={styles.header}></View>
 
       <View style={styles.footer}>
-
-        
           <Title testID="register-subtitle" style={styles.text}>
             Sign up
           </Title>
