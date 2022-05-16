@@ -9,6 +9,23 @@ const styles = StyleSheet.create ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  logo: {
+    height: 40,
+    width: 40,
+  },
+  textLogo:{
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: 'white',
+    fontStyle: 'italic',
+  },
+  textNote:{
+    fontSize: 16,
+    color: 'white',
+    fontStyle: 'italic',
+    width: '80%',
+    textAlign: 'center'
+  },
   footer: {
     flex: 2,
     backgroundColor: '#fff',
@@ -41,7 +58,7 @@ const styles = StyleSheet.create ({
     textAlign: 'center',
     marginTop: 30,
     marginBottom: 10,
-    fontSize: 30,
+    fontSize: 35,
     color: '#FF6666',
     fontWeight: 'bold'
   },

@@ -8,6 +8,19 @@ export default {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  textLogo:{
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: 'white',
+    fontStyle: 'italic',
+  },
+  textNote:{
+    fontSize: 16,
+    color: 'white',
+    fontStyle: 'italic',
+    width: '80%',
+    textAlign: 'center'
+  },
   footer: {
     flex: 2,
     backgroundColor: '#fff',
@@ -43,6 +56,9 @@ export default {
     alignItems: 'center',
     marginHorizontal: 30,
     marginTop: 10,
+  },
+  agree: {
+    color: '#FF6666'
   },
   textnote: {
     fontSize: 18,

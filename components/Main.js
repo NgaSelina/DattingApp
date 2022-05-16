@@ -208,13 +208,8 @@ function Main() {
               <Link component={TouchableOpacity} to={`/profile/${profile.uid}`}>
                 <Headline style={styles.username}>
                   {profile.name}
-                  {/* {profile.age} */}
                 </Headline>
               </Link>
-
-              {/* <Text style={styles.location}>
-                {profile.city}, {profile.country}
-              </Text> */}
 
             </View>
             

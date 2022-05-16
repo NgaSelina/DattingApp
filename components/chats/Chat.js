@@ -93,6 +93,7 @@ export default function Chat({match}) {
     <View style={{flex: 1}}>
       <LightHeader title={`${part.name}`} />
       <GiftedChat
+  // optionTintColor='#FF6666'
         showAvatarForEveryMessage={false}
         onPressAvatar={() => {
           history.push(`/profile/${match.params.uid}`);

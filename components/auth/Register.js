@@ -81,11 +81,15 @@ function Register() {
   return (
     <ScrollView contentContainerStyle={{...styles.container}}>
 
-      <View style={styles.header}></View>
+      <View style={styles.header}>
+        <Text style={styles.textLogo}>DatingApp</Text>
+        <Text style={styles.textNote}>
+          To the world you may be one person, but to one person you may be the world.</Text>
+      </View>
 
       <View style={styles.footer}>
           <Title testID="register-subtitle" style={styles.text}>
-            Sign up
+            Sign Up
           </Title>
           {error.length > 0 && (
             <Text testID="register-error" style={styles.error}>
@@ -120,7 +124,7 @@ function Register() {
             />
             <Text
               testID="register-terms"
-              style={styles.forgot}
+              style={styles.agree}
               onPress={() => {
                 setCheck((p) => !p);
                 return showTerms();

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, Title, TextInput, Button, Caption} from 'react-native-paper';
+import {Text, Title, TextInput, Button, Caption, Image} from 'react-native-paper';
 import {StyleSheet, View, ScrollView, TouchableOpacity} from 'react-native';
 import {Link, useHistory} from 'react-router-native';
 import auth from '@react-native-firebase/auth';
@@ -39,7 +39,9 @@ function Login() {
     <ScrollView contentContainerStyle={{...styles.container}}>
 
       <View style={styles.header}>
-
+        <Text style={styles.textLogo}>DatingApp</Text>
+        <Text style={styles.textNote}>
+          To the world you may be one person, but to one person you may be the world.</Text>
       </View>
 
       <View style={styles.footer}>

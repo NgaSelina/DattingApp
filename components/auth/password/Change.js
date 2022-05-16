@@ -50,7 +50,7 @@ function Change() {
       .then(() =>
         user
           .updatePassword(passwords.new)
-          .then(() => setSuccess('Password was chagned.')),
+          .then(() => setSuccess('Password was changed.')),
       )
       .catch((err) => setError(err.message.replace(/\[.*\]\s/gi, '')));
   }
@@ -60,7 +60,7 @@ function Change() {
       <LightHeader title="Change password" />
 
       <View style={{...styles.page, ...styles.container}}>
-        <Caption style={styles.textNote}>You will get email with confirmation link.</Caption>
+        {/* <Caption style={styles.textNote}></Caption> */}
         {inputs.map(({label, key}, i) => (
           <TextInput
             key={i}
@@ -80,7 +80,7 @@ function Change() {
           style={styles.btnBottom}
           mode="contained"
           onPress={() => sendConfirmationLink()}>
-          Send confirmation link
+          Change Password
         </Button>
       </View>
     </View>

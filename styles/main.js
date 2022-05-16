@@ -4,7 +4,7 @@ export default {
   },
   topBar: {
     backgroundColor: 'rgba(255, 255, 255, 1)',
-    padding: 12,
+    padding: 15,
     zIndex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
